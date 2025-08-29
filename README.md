@@ -60,12 +60,13 @@ The server will be running on `http://localhost:3000`.
 
 ## Project Structure
     .
-    ├── src/                  # Main application source code
+    ├── public/               # Static file, styles.css
+    ├── server/               # Main application source code
     │   ├── controllers/      # Route logic handlers
+    │   ├── errors/           # Custom Error definitions
     │   ├── routes/           # API route definitions
-    │   └── app.js            # Express application setup
-    ├── .env.example          # Example environment file
-    ├── .gitignore            # Git exclusion rules
+    │   ├── app.js            # Express application setup
+    │   └── db.js             # Mock db function
+    ├── view/                 # EJS templates, static html pages
     ├── package.json          # Project dependencies and scripts
-    ├── README.md             # This file
-    └── server.js             # Application entry point
+    └── README.md             # This file
